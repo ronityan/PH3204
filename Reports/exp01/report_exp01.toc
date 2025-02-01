@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {1}Theory}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Zener Diode as Voltage Regulator}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Voltage Regulator IC7805}{3}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Zener Diode as a voltage Regulator}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Line Regulation}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Load Regulation}{5}{subsection.2.2}%
+\contentsline {section}{\numberline {3}IC7805 as a Voltage Regulator}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Line Regulation}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Load Regulation}{9}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Conclusion}{10}{section.4}%
+\contentsline {section}{\numberline {5}Sources of Error}{11}{section.5}%
