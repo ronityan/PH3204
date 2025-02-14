@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1739540615.92082 "d:/ronit/IISER-K/6 SEM/PH3204/Reports/exp02/report02.tex" "report02.pdf" "report02" 1739540617.17887 0
+["pdflatex"] 1739550615.59334 "d:/ronit/IISER-K/6 SEM/PH3204/Reports/exp02/report02.tex" "report02.pdf" "report02" 1739550617.00149 0
   "C:/Users/Ronit Bhuyan/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1739530423 124616 f56cfe5d57a59e17f3a3bc9e98d8c4e9 ""
   "C:/Users/Ronit Bhuyan/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1725563239 14064 13a2a1bceb61b4134538f9d2923ceb2a ""
   "C:/Users/Ronit Bhuyan/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1730738813 11988859 aa955a41b8e5d41c5bb18f6c790e3104 ""
@@ -182,11 +182,11 @@
   "C:/Users/Ronit Bhuyan/AppData/Local/Programs/MiKTeX/tex/latex/tools/longtable.sty" 1730400552 15900 3cb191e576c7a313634d2813c55d4bf1 ""
   "C:/Users/Ronit Bhuyan/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Ronit Bhuyan/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "d:/ronit/IISER-K/6 SEM/PH3204/Reports/exp02/report02.tex" 1739540614 4157 6d94dc645c3f347600e86452c393b50b ""
-  "report02.aux" 1739540616 1176 190864d4ea840314a7cb7448cb48f524 "pdflatex"
-  "report02.out" 1739540616 1107 6bbd1409ec06abf094fa7943dadcea3c "pdflatex"
-  "report02.tex" 1739540614 4157 6d94dc645c3f347600e86452c393b50b ""
-  "report02.toc" 1739540616 558 8bd5c66a56d90f66d4e51cbfde05b628 "pdflatex"
+  "d:/ronit/IISER-K/6 SEM/PH3204/Reports/exp02/report02.tex" 1739550613 10764 5478eb0e4d41c568a9b427a25c3bb966 ""
+  "report02.aux" 1739550616 2817 c10dd8275a2e5fe13bb23ed4081cfe0a "pdflatex"
+  "report02.out" 1739550616 1107 6bbd1409ec06abf094fa7943dadcea3c "pdflatex"
+  "report02.tex" 1739550613 10764 5478eb0e4d41c568a9b427a25c3bb966 ""
+  "report02.toc" 1739550616 558 2f0c55b85d204dec42c4d8f285befd81 "pdflatex"
   (generated)
   "report02.aux"
   "report02.log"
