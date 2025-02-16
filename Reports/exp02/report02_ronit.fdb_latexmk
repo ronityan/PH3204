@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1739713513.72667 "d:/ronit/IISER-K/6 SEM/PH3204/Reports/exp02/report02_ronit.tex" "report02_ronit.pdf" "report02_ronit" 1739713515.11335 0
+["pdflatex"] 1739726465.54725 "d:/ronit/IISER-K/6 SEM/PH3204/Reports/exp02/report02_ronit.tex" "report02_ronit.pdf" "report02_ronit" 1739726467.08014 0
   "C:/Users/Ronit Bhuyan/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1739711902 124616 f56cfe5d57a59e17f3a3bc9e98d8c4e9 ""
   "C:/Users/Ronit Bhuyan/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1725563239 14064 13a2a1bceb61b4134538f9d2923ceb2a ""
   "C:/Users/Ronit Bhuyan/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1730738813 11988859 aa955a41b8e5d41c5bb18f6c790e3104 ""
@@ -185,11 +185,11 @@
   "C:/Users/Ronit Bhuyan/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "D:/ronit/IISER-K/6 SEM/PH3204/Reports/exp02/plot1.png" 1739712741 18922 c496e8d93e55ff302af44925bf183be2 ""
   "D:/ronit/IISER-K/6 SEM/PH3204/Reports/exp02/plot2.png" 1739712744 37193 12eb1e10eae08231c5147e9eb35a7769 ""
-  "d:/ronit/IISER-K/6 SEM/PH3204/Reports/exp02/report02_ronit.tex" 1739713513 13524 b884ce0314a3e6bf2a7d26b2de1636d1 ""
-  "report02_ronit.aux" 1739713514 4021 ec985c8a4d5114a2a7ba376c844694fd "pdflatex"
-  "report02_ronit.out" 1739713514 1107 6bbd1409ec06abf094fa7943dadcea3c "pdflatex"
-  "report02_ronit.tex" 1739713513 13524 b884ce0314a3e6bf2a7d26b2de1636d1 ""
-  "report02_ronit.toc" 1739713514 558 718737f41c08d0086171804f9907cac8 "pdflatex"
+  "d:/ronit/IISER-K/6 SEM/PH3204/Reports/exp02/report02_ronit.tex" 1739726463 13837 75036ea74e6dc4d980e4c2540e7f97e7 ""
+  "report02_ronit.aux" 1739726466 4090 8b647902c1cbfced0b155467f44def3b "pdflatex"
+  "report02_ronit.out" 1739726466 1107 6bbd1409ec06abf094fa7943dadcea3c "pdflatex"
+  "report02_ronit.tex" 1739726463 13837 75036ea74e6dc4d980e4c2540e7f97e7 ""
+  "report02_ronit.toc" 1739726466 558 bc1a765be7d9ac2df36da7d3ed778dbb "pdflatex"
   (generated)
   "report02_ronit.aux"
   "report02_ronit.log"

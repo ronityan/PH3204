@@ -53,8 +53,10 @@ The BJT is classified into two types based on the majority charge carriers in th
   \item \textbf{n-p-n Transistor:} In an n-p-n transistor, the emitter and collector are doped with n-type impurities while the base is doped with p-type impurities.
   \item \textbf{p-n-p Transistor:} In a p-n-p transistor, the emitter and collector are doped with p-type impurities while the base is doped with n-type impurities.
 \end{itemize}
-Since, there are three terminals in a transistor, there exists three possible of operations, where one of the three terminals is common to both Input and Output. These modes are \textbf{Common Emitter(CE) Configuration, Common Base(CB) Configuration}, and \textbf{Common Collector(CC) Configuration}. Out of these three, the Common Emitter Configuration is the most widely used one.\\
-\\
+Since, there are three terminals in a transistor, there exists three possible of operations, where one of the three terminals is common to both Input and Output. These modes are \textbf{Common Emitter(CE) Configuration, Common Base(CB) Configuration}, and \textbf{Common Collector(CC) Configuration}. Out of these three, the Common Emitter Configuration is the most widely used one. We define two parameters $\alpha$ and $\beta$ to characterize the transistor as follows:
+\begin{align*}
+    \alpha = \frac{I_C}{I_E} \quad \beta = \frac{I_C}{I_B} 
+\end{align*}
 In this experiment, we shall study the Input and Output Characteristics of an n-p-n BJT in the Common Emitter Configuration.
 
 \subsection{Common Emitter (CE) Configuration}
@@ -86,10 +88,10 @@ Due to its high current,voltage and power gain, the Common Emitter Configuration
 We shall study the input characteristics of the CE configuration of the transistor. We vary the input voltage and measure the variation of  $\mathrm{I_B}$ v/s $\mathrm{V_{BE}}$, keeping the collector-emitter voltage ($\mathrm{V_{CE}}$) constant. We have carried out the experiment for $\mathrm{I_B}=2 V$ and $\mathrm{I_B}=3 V$. The data obtained has been tabulated below.
 \begin{longtable}{|l|l|l|l|l|l|}
 	\hline
-    $\mathrm{V_{BB}(V)}$ & $\mathrm{V_{BE}(V)}$ & $\mathrm{I_{B}(\mu A)}$  & $\mathrm{V_{CC}(V)}$  & $\mathrm{V_{CE}(V)}$ & $\mathrm{I_{C}(\mu A)}$  \\ \hline
+    $\mathrm{V_{BB}(V)}$ & $\mathrm{V_{BE}(V)}$ & $\mathrm{I_{B}(\mu A)}$  & $\mathrm{V_{CC}(V)}$  & $\mathrm{V_{CE}(V)}$ & $\mathrm{I_{C}(m A)}$  \\ \hline
 	\endfirsthead
 	\hline
-   $\mathrm{V_{BB}(V)}$ & $\mathrm{V_{BE}(V)}$ & $\mathrm{I_{B}(\mu A)}$  & $\mathrm{V_{CC}(V)}$  & $\mathrm{V_{CE}(V)}$ & $\mathrm{I_{C}(\mu A)}$  \\ \hline
+   $\mathrm{V_{BB}(V)}$ & $\mathrm{V_{BE}(V)}$ & $\mathrm{I_{B}(\mu A)}$  & $\mathrm{V_{CC}(V)}$  & $\mathrm{V_{CE}(V)}$ & $\mathrm{I_{C}(mA)}$  \\ \hline
 	\endhead
 	\hline
 	\endfoot
@@ -100,8 +102,8 @@ We shall study the input characteristics of the CE configuration of the transist
     0.2  & 0.21  & 0   & 1.98  & 2  & 0   \\ \hline
     0.3  & 0.31  & 0   & 1.98  & 2  & 0   \\ \hline
     0.4  & 0.41  & 0   & 1.98  & 2  & 0   \\ \hline
-    0.5  & 0.51  & 0   & 1.98  & 2  & 52  \\ \hline
-    0.6  & 0.6   & 7   & 2.11  & 2  & 1094  \\ \hline
+    0.5  & 0.51  & 0   & 1.98  & 2  & 0.05  \\ \hline
+    0.6  & 0.6   & 7   & 2.11  & 2  & 1.1  \\ \hline
     0.7  & 0.65  & 45  & 2.03  & 2  & 7.2  \\ \hline
     0.8  & 0.664 & 110 & 2.07  & 2  & 17.7  \\ \hline
     0.9  & 0.68  & 195 & 2.19  & 2  & 32.8  \\ \hline
@@ -113,10 +115,10 @@ We shall study the input characteristics of the CE configuration of the transist
 \end{longtable}
 \begin{longtable}{|l|l|l|l|l|l|}
 	\hline
-    $\mathrm{V_{BB}(V)}$ & $\mathrm{V_{BE}(V)}$ & $\mathrm{I_{B}(\mu A)}$  & $\mathrm{V_{CC}(V)}$  & $\mathrm{V_{CE}(V)}$ & $\mathrm{I_{C}(\mu A)}$  \\ \hline
+    $\mathrm{V_{BB}(V)}$ & $\mathrm{V_{BE}(V)}$ & $\mathrm{I_{B}(\mu A)}$  & $\mathrm{V_{CC}(V)}$  & $\mathrm{V_{CE}(V)}$ & $\mathrm{I_{C}(m A)}$  \\ \hline
 	\endfirsthead
 	\hline
-    $\mathrm{V_{BB}(V)}$ & $\mathrm{V_{BE}(V)}$ & $\mathrm{I_{B}(\mu A)}$  & $\mathrm{V_{CC}(V)}$  & $\mathrm{V_{CE}(V)}$ & $\mathrm{I_{C}(\mu A)}$  \\ \hline
+    $\mathrm{V_{BB}(V)}$ & $\mathrm{V_{BE}(V)}$ & $\mathrm{I_{B}(\mu A)}$  & $\mathrm{V_{CC}(V)}$  & $\mathrm{V_{CE}(V)}$ & $\mathrm{I_{C}(m A)}$  \\ \hline
 	\endhead
 	\hline
 	\endfoot
@@ -144,7 +146,7 @@ We shall study the input characteristics of the CE configuration of the transist
     \caption{Input characteristics of BJT for $V_{CE}=2V$ and $V_{CE}=3V$}  % Optional caption
     \label{fig:part01_01}  % Optional label for referencing
   \end{figure}\noindent
-  Note that, although, it was expected that the curve for $V_{CE}=2V$ to be towards left of the curve corresponding to $V_{CE}=3V$,it is not so. This may be due to some error in the experiment.\\
+  Note that, although, it was expected that the curve for $V_{CE}=2V$ to be towards left of the curve corresponding to $V_{CE}=3V$,it is not so. One possible reason may be that the values of $V_{CE}$ were pretty close to each other and hence the curves overlapped.\\
 \section{CE Output Characteristics}
 We shall now study the output characteristics of a n-p-n transistor in CE configuration. We shall study the variation of $\mathrm{I_C}$ v/s $\mathrm{V_{CE}}$., keeping the base current $\mathrm{I_B}$ constant. We have carried out the experiment for $\mathrm{I_B}=10 \mu A$ and $\mathrm{I_B}=20 \mu A$ and $\mathrm{I_B}= 30 \mu A$. The data obtained has been tabulated below.
 \begin{longtable}{|l|l|l|l|}
@@ -247,7 +249,7 @@ We shall now study the output characteristics of a n-p-n transistor in CE config
 \begin{figure}[H]  
     \centering  
     \includegraphics[width=0.8\textwidth]{D:/ronit/IISER-K/6 SEM/PH3204/Reports/exp02/plot2.png}  % Path to your image file
-    \caption{Output characteristics of BJT for $I_{B}=10\mu A,20\mu A$ and $30\mu A$}  % Optional caption
+    \caption{Output characteristics of BJT for $\mathrm{I_{B}=10\mu A}$, $\mathrm{20\mu A}$ and $\mathrm{30\mu A}$}  % Optional caption
     \label{fig:part01_02}  % Optional label for referencing
   \end{figure}\noindent
 As expected, we observe from the graph that the output current $\mathrm{I_C}$ increases with the increase in the collector-emitter voltage $\mathrm{V_{CE}}$ for a constant base current $\mathrm{I_B}$.
@@ -256,12 +258,12 @@ In this experiment, we attempted to the study the input and output characteristi
 On the other hand, in output characteristics, we observed that the output current $\mathrm{I_C}$ increases with the increase in the collector-emitter voltage $\mathrm{V_{CE}}$ before reaching saturation for a fixed value of base current $\mathrm{I_B}$.\\
 \\
 Using, table \ref{tab:part02_01}, \ref{tab:part02_02} and \ref{tab:part02_03}, we can calculate the value of $\beta$ for the transistor using the formula $\beta = \frac{I_C}{I_B}$.
-The value of $\beta$ for the transistor is found to be $147$, $162.5$ and $152.67$ for $\mathrm{I_B}=10 \mu A,20 \mu A$ and $30 \mu A$ respectively.
+The value of $\beta$ for the transistor is found to be $147.0$, $162.5$ and $152.7$ for $\mathrm{I_B}=10 \mathrm{\mu A}$, $\mathrm{20 \mu A}$ and $\mathrm{30 \mu A}$ respectively.
 \section{Sources of Error}
 \begin{itemize}
     \item The multimeter used for measuring of voltage and current may not be accurate.
-    \item The connections may not be proper and transistor may not be in a proper condition. Also, the resistance of the wires may not be negligible.
-    \item During a lot of readings, the values fluctuated a lot and could have given rise to errors.
+    \item The connections may be loose or improper and transistor may not be in a proper condition. Also, the resistance of the wires may not be negligible.
+    \item During a lot of readings, the values fluctuated a lot and which could poetentially lead to errors.
 \end{itemize}
 
  
