@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1739563075.86169 "d:/ronit/IISER-K/6 SEM/PH3204/Reports/exp02/report02.tex" "report02.pdf" "report02" 1739563077.28617 0
+["pdflatex"] 1739694353.94572 "d:/ronit/IISER-K/6 SEM/PH3204/Reports/exp02/report02_ronit.tex" "report02_ronit.pdf" "report02_ronit" 1739694356.14106 0
   "C:/Users/Ronit Bhuyan/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1739530423 124616 f56cfe5d57a59e17f3a3bc9e98d8c4e9 ""
   "C:/Users/Ronit Bhuyan/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1725563239 14064 13a2a1bceb61b4134538f9d2923ceb2a ""
   "C:/Users/Ronit Bhuyan/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1730738813 11988859 aa955a41b8e5d41c5bb18f6c790e3104 ""
@@ -182,17 +182,17 @@
   "C:/Users/Ronit Bhuyan/AppData/Local/Programs/MiKTeX/tex/latex/tools/longtable.sty" 1730400552 15900 3cb191e576c7a313634d2813c55d4bf1 ""
   "C:/Users/Ronit Bhuyan/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Ronit Bhuyan/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "D:/ronit/IISER-K/6 SEM/PH3204/Reports/exp02/plot1.png" 1739553391 18922 c496e8d93e55ff302af44925bf183be2 ""
-  "D:/ronit/IISER-K/6 SEM/PH3204/Reports/exp02/plot2.png" 1739562403 25898 0b725cf23aa660e04bdcd702ddc64348 ""
-  "d:/ronit/IISER-K/6 SEM/PH3204/Reports/exp02/report02.tex" 1739563075 11875 4221b67b4d491b690f03a0f336813cea ""
-  "report02.aux" 1739563077 3491 5dc00a7a48a6318f1eba96c34ce38806 "pdflatex"
-  "report02.out" 1739563077 1107 6bbd1409ec06abf094fa7943dadcea3c "pdflatex"
-  "report02.tex" 1739563075 11875 4221b67b4d491b690f03a0f336813cea ""
-  "report02.toc" 1739563077 558 61ad7ec946745ef276337963e0cda87a "pdflatex"
+  "D:/ronit/IISER-K/6 SEM/PH3204/Reports/exp02/plot1.png" 1739694299 18922 c496e8d93e55ff302af44925bf183be2 ""
+  "D:/ronit/IISER-K/6 SEM/PH3204/Reports/exp02/plot2.png" 1739694332 25826 7d8cdff4a2105f8760daef075af9341e ""
+  "d:/ronit/IISER-K/6 SEM/PH3204/Reports/exp02/report02_ronit.tex" 1739694246 13204 9b07054cb0e276f7b056b7b78a1dc676 ""
+  "report02_ronit.aux" 1739694355 3494 b1c03f21f5cf34f7556fef26fdc9b764 "pdflatex"
+  "report02_ronit.out" 1739694355 1107 6bbd1409ec06abf094fa7943dadcea3c "pdflatex"
+  "report02_ronit.tex" 1739694246 13204 9b07054cb0e276f7b056b7b78a1dc676 ""
+  "report02_ronit.toc" 1739694355 558 718737f41c08d0086171804f9907cac8 "pdflatex"
   (generated)
-  "report02.aux"
-  "report02.log"
-  "report02.out"
-  "report02.pdf"
-  "report02.toc"
+  "report02_ronit.aux"
+  "report02_ronit.log"
+  "report02_ronit.out"
+  "report02_ronit.pdf"
+  "report02_ronit.toc"
   (rewritten before read)

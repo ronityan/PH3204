@@ -1,7 +1,7 @@
 PWD d:\ronit\IISER-K\6 SEM\PH3204\Reports\exp02
 INPUT C:\Users\Ronit Bhuyan\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT d:\ronit\IISER-K\6 SEM\PH3204\Reports\exp02\report02.tex
-OUTPUT report02.log
+INPUT d:\ronit\IISER-K\6 SEM\PH3204\Reports\exp02\report02_ronit.tex
+OUTPUT report02_ronit.log
 INPUT C:\Users\Ronit Bhuyan\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\Ronit Bhuyan\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\Ronit Bhuyan\AppData\Local\Programs\MiKTeX\tex\latex\base\size12.clo
@@ -266,10 +266,10 @@ INPUT C:\Users\Ronit Bhuyan\AppData\Local\Programs\MiKTeX\tex\latex\rerunfileche
 INPUT C:\Users\Ronit Bhuyan\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
 INPUT C:\Users\Ronit Bhuyan\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
 INPUT C:\Users\Ronit Bhuyan\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
-INPUT .\report02.aux
-INPUT .\report02.aux
-INPUT report02.aux
-OUTPUT report02.aux
+INPUT .\report02_ronit.aux
+INPUT .\report02_ronit.aux
+INPUT report02_ronit.aux
+OUTPUT report02_ronit.aux
 INPUT C:\Users\Ronit Bhuyan\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\Ronit Bhuyan\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\Ronit Bhuyan\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -278,14 +278,14 @@ INPUT C:\Users\Ronit Bhuyan\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg
 INPUT C:\Users\Ronit Bhuyan\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\Ronit Bhuyan\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\Ronit Bhuyan\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT .\report02.out
-INPUT .\report02.out
-INPUT report02.out
-INPUT report02.out
-OUTPUT report02.pdf
-INPUT .\report02.out
-INPUT .\report02.out
-OUTPUT report02.out
+INPUT .\report02_ronit.out
+INPUT .\report02_ronit.out
+INPUT report02_ronit.out
+INPUT report02_ronit.out
+OUTPUT report02_ronit.pdf
+INPUT .\report02_ronit.out
+INPUT .\report02_ronit.out
+OUTPUT report02_ronit.out
 INPUT C:\Users\Ronit Bhuyan\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\Ronit Bhuyan\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\Ronit Bhuyan\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
@@ -309,9 +309,9 @@ INPUT C:\Users\Ronit Bhuyan\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfo
 INPUT C:\Users\Ronit Bhuyan\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\Ronit Bhuyan\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Users\Ronit Bhuyan\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT .\report02.toc
-INPUT .\report02.toc
-INPUT report02.toc
+INPUT .\report02_ronit.toc
+INPUT .\report02_ronit.toc
+INPUT report02_ronit.toc
 INPUT C:\Users\Ronit Bhuyan\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\Ronit Bhuyan\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\Ronit Bhuyan\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
@@ -330,7 +330,7 @@ INPUT C:\Users\Ronit Bhuyan\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfo
 INPUT C:\Users\Ronit Bhuyan\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\Ronit Bhuyan\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\Ronit Bhuyan\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
-OUTPUT report02.toc
+OUTPUT report02_ronit.toc
 INPUT C:\Users\Ronit Bhuyan\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\Ronit Bhuyan\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
 INPUT D:\ronit\IISER-K\6 SEM\PH3204\Reports\exp02\plot1.png
@@ -347,9 +347,9 @@ INPUT D:\ronit\IISER-K\6 SEM\PH3204\Reports\exp02\plot2.png
 INPUT D:\ronit\IISER-K\6 SEM\PH3204\Reports\exp02\plot2.png
 INPUT D:\ronit\IISER-K\6 SEM\PH3204\Reports\exp02\plot2.png
 INPUT D:\ronit\IISER-K\6 SEM\PH3204\Reports\exp02\plot2.png
-INPUT report02.aux
-INPUT .\report02.out
-INPUT .\report02.out
+INPUT report02_ronit.aux
+INPUT .\report02_ronit.out
+INPUT .\report02_ronit.out
 INPUT C:\Users\Ronit Bhuyan\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\Ronit Bhuyan\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Users\Ronit Bhuyan\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
