@@ -109,6 +109,7 @@ We shall study the input characteristics of the CE configuration of the transist
     1.1  & 0.701 & 279 & 2.49  & 2  & 48.1  \\ \hline
     1.2  & 0.701   & 443 & 2.88  & 2  & 79.5  \\ \hline
 \caption{Table for Input characteristics for $\mathrm{V_{BE}=2V}$}
+\label{tab:part01_01}
 \end{longtable}
 \begin{longtable}{|l|l|l|l|l|l|}
 	\hline
@@ -135,6 +136,7 @@ We shall study the input characteristics of the CE configuration of the transist
     1.1  & 0.68  & 369 & 3.21  & 3  & 68.5 \\ \hline
     1.2  & 0.696 & 455 & 3.21  & 3  & 86.1 \\ \hline
 \caption{Table for Input characteristics for $\mathrm{V_{BE}=3V}$}
+\label{tab:part01_02}
 \end{longtable}\noindent
 \begin{figure}[H]  
     \centering  
@@ -143,7 +145,6 @@ We shall study the input characteristics of the CE configuration of the transist
     \label{fig:part01_01}  % Optional label for referencing
   \end{figure}\noindent
   Note that, although, it was expected that the curve for $V_{CE}=2V$ to be towards left of the curve corresponding to $V_{CE}=3V$,it is not so. This may be due to some error in the experiment.\\
-  \\
 \section{CE Output Characteristics}
 We shall now study the output characteristics of a n-p-n transistor in CE configuration. We shall study the variation of $\mathrm{I_C}$ v/s $\mathrm{V_{CE}}$., keeping the base current $\mathrm{I_B}$ constant. We have carried out the experiment for $\mathrm{I_B}=10 \mu A$ and $\mathrm{I_B}=20 \mu A$ and $\mathrm{I_B}= 30 \mu A$. The data obtained has been tabulated below.
 \begin{longtable}{|l|l|l|l|}
@@ -172,6 +173,7 @@ We shall now study the output characteristics of a n-p-n transistor in CE config
     10  & 2.5  & 861  & 1473 \\ \hline
     10  & 3.0  & 1400 & 1470 \\ \hline
 \caption{Table for Output characteristics for $\mathrm{I_B=10 \mu A}$}
+\label{tab:part02_01}
 \end{longtable}
 \begin{longtable}{|l|l|l|l|}
 	\hline
@@ -203,9 +205,8 @@ We shall now study the output characteristics of a n-p-n transistor in CE config
     20  & 3.5  & 390.0 & 3110 \\ \hline
     20  & 4.0  & 957.0 & 3160 \\ \hline
     20  & 5.0  & 1855.0 & 3250 \\ \hline
-    20  & 6.0  & 2790.0 & 3300 \\ \hline
-    20  & 7.0  & 3830.0 & 3430 \\ \hline
 \caption{Table for Output characteristics for $\mathrm{I_B=20 \mu A}$}
+\label{tab:part02_02}
 \end{longtable}
 \begin{longtable}{|l|l|l|l|}
 	\hline
@@ -240,8 +241,8 @@ We shall now study the output characteristics of a n-p-n transistor in CE config
     30  & 4.0  & 230.0 & 3890 \\ \hline
     30  & 5.0  & 510.0 & 4540 \\ \hline
     30  & 6.0  & 1500.0 & 4580 \\ \hline
-    30  & 7.0  & 2460.0 & 4750 \\ \hline
 \caption{Table for Output characteristics for $\mathrm{I_B=30 \mu A}$}
+\label{tab:part02_03}
 \end{longtable}
 \begin{figure}[H]  
     \centering  
@@ -252,7 +253,10 @@ We shall now study the output characteristics of a n-p-n transistor in CE config
 As expected, we observe from the graph that the output current $\mathrm{I_C}$ increases with the increase in the collector-emitter voltage $\mathrm{V_{CE}}$ for a constant base current $\mathrm{I_B}$.
 \section{Conclusion}
 In this experiment, we attempted to the study the input and output characteristics of a Bipolar Junction Transistor in CE mode. While verifying the input characteristics, we observed that , contrary to our expectations, the curve for $V_{CE}=2V$ was not towards the left of the curve for $V_{CE}=3V$. This may be due to some error in the experiment. \\
-On the other hand, in output characteristics, we observed that the output current $\mathrm{I_C}$ increases with the increase in the collector-emitter voltage $\mathrm{V_{CE}}$ before reaching saturation for a fixed value of base current $\mathrm{I_B}$. 
+On the other hand, in output characteristics, we observed that the output current $\mathrm{I_C}$ increases with the increase in the collector-emitter voltage $\mathrm{V_{CE}}$ before reaching saturation for a fixed value of base current $\mathrm{I_B}$.\\
+\\
+Using, table \ref{tab:part02_01}, \ref{tab:part02_02} and \ref{tab:part02_03}, we can calculate the value of $\beta$ for the transistor using the formula $\beta = \frac{I_C}{I_B}$.
+The value of $\beta$ for the transistor is found to be $147$, $162.5$ and $152.67$ for $\mathrm{I_B}=10 \mu A,20 \mu A$ and $30 \mu A$ respectively.
 \section{Sources of Error}
 \begin{itemize}
     \item The multimeter used for measuring of voltage and current may not be accurate.
