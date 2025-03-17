@@ -17,6 +17,7 @@
 \usepackage{circuitikz}
 \usepackage[hidelinks]{hyperref}
 \usepackage{tikz}
+\usepackage{subcaption}
 
 
 
@@ -212,6 +213,9 @@ The OpAmp can be used as an inverting amplifier by connecting it as per the foll
       \draw (opamp.-) to[R,l=$R_1$] ++(-2,0)  to [sV,l=$\mathrm{V_{in}}$] ++ (0,-2) node[ground]{}; 
       \draw (opamp.+) to[short] ++(0,-1) node[ground]{};
       %input
+
+      \node[below] at (opamp.-) {\textbf{A}};
+
       
       %feedback loop
       \draw (opamp.-) to [short,*-] ++(0,1.1) to [R,l=$R_f$]++ (2,0) to [short,-*] (opamp.out);
@@ -232,6 +236,22 @@ The OpAmp can be used as an inverting amplifier by connecting it as per the foll
 \caption{Circuit diagram of OpAmp as an Inverting Amplifier}
   
 \end{figure}
+\noindent
+
+At the point A, the voltgae is 0 due to virtual ground. Theus, by applying Kirchoff's current law at the point A, we get 
+\begin{align*}
+  \frac{V_{in}-0}{R_1}= \frac{0-V_{out}}{R_f}
+  \implies V_{out} = -\frac{R_f}{R_1}V_{in}
+\end{align*}
+Hence, the amplification in the case of inverting amplifier is given by
+\begin{align*}
+  \boxed{
+    A = -\frac{R_f}{R_1}
+  }
+\end{align*}
+
+
+
 \subsection{Non-Inverting Amplifier}
 The circuit diagram of an OpAmp as a non-inverting amplifier is shown below.
 \begin{figure}[H]
@@ -250,6 +270,8 @@ The circuit diagram of an OpAmp as a non-inverting amplifier is shown below.
       \draw (opamp.out) to [short,*-o] ++ (1,0) node[above]{$\mathrm{V_{out}}$};
 
       %power supply
+      \node[below] at (opamp.-) {\textbf{A}};
+
 
       \draw (opamp.up) to[short,-*] ++(0,0.5) node[right]{$\mathrm{+15V}$};
       \draw (opamp.down) to[short,-*] ++(0,-0.5) node[right]{$\mathrm{-15V}$};
@@ -262,6 +284,18 @@ The circuit diagram of an OpAmp as a non-inverting amplifier is shown below.
 \label{fig:non_inverting_amp}
 \caption{Circuit diagram of OpAmp as a Non-Inverting Amplifier}
 \end{figure}
+
+At point A, the potential is $V_in$. Thus, by applying Kirchoff's current law at point A, we get
+\begin{align*}
+  \frac{V_{in}-V_{out}}{R_1} = \frac{V_{out}-0}{R_f}
+  \implies V_{out} = \left(1+\frac{R_f}{R_1}\right)V_{in}
+\end{align*}
+Hence, the amplification in the case of non-inverting amplifier is given by
+\begin{align*}
+  \boxed{
+    A = 1+\frac{R_f}{R_1}
+  }
+\end{align*}
   
 \subsection{Adder}
 The OpAmp can be used as an adder by connecting it as per the following circuit diagram.
@@ -284,6 +318,9 @@ The OpAmp can be used as an adder by connecting it as per the following circuit 
       %output
       \draw (opamp.out) to [short,*-o] ++ (1,0) node[above]{$\mathrm{V_{out}}$};
 
+      \node[below] at (opamp.-) {\textbf{A}};
+
+
       %power supply
 
       \draw (opamp.up) to[short,-*] ++(0,0.5) node[right]{$\mathrm{+15V}$};
@@ -296,6 +333,18 @@ The OpAmp can be used as an adder by connecting it as per the following circuit 
 \caption{Circuit diagram of OpAmp as an Adder}
 \label{fig:adder}
 \end{figure}
+\noindent
+Similar to the case of the inverting and non-inverting amplifiers, the potential at the point A is 0. Thus, by applying Kirchoff's current law at point A, we get
+\begin{align*}
+  \frac{0-V_1}{R_1}+\frac{0-V_2}{R_2}+\frac{0-V_3}{R_3} = \frac{V_{out}}{R_f}\\
+  \implies V_{out} = -\left(\frac{R_f}{R_1}V_1+\frac{R_f}{R_2}V_2+\frac{R_f}{R_3}V_3\right)
+\end{align*}
+In the special case when $R_1=R_2=R_3=R_f=R$, the output voltage is given by
+\begin{align*}
+  V_{out} = -(V_1+V_2+V_3)
+\end{align*}
+Thus, the OpAmp acts as an adder in this case by addiing the input voltages.
+
 \subsection{Subtractor}
 The circuit diagram for OpAmp as a subtractor is shown below. 
 \begin{figure}[H]
@@ -306,7 +355,7 @@ The circuit diagram for OpAmp as a subtractor is shown below.
       %input
       \draw (opamp.-) node{} to [R,label=$R_1$] ++(-4,0) to [sV,label=$\mathrm{V_1}$] ++(0,-3) node[ground]{};
       \draw (opamp.+) node{} to [R,label=$R_2$] ++(-2,0) to [sV,label=$\mathrm{V_2}$] ++(0,-2) node[ground]{};
-      \draw(opamp.+) to [short] ++(0,-1) to [R,label=$R_3$] ++(0,-2) node[ground]{};
+      \draw(opamp.+) to [short] ++(0,-1) to [R,label=$R_0$] ++(0,-2) node[ground]{};
       
       %feedback loop
       \draw (opamp.-) to [short,*-] ++(0,1.1) to [R,l=$R_f$]++ (2,0) to [short,-*] (opamp.out);
@@ -315,6 +364,9 @@ The circuit diagram for OpAmp as a subtractor is shown below.
       \draw (opamp.out) to [short,*-o] ++ (1,0) node[above]{$\mathrm{V_{out}}$};
 
       %power supply
+      \node[below] at (opamp.-) {\textbf{A}};
+      \node[below left] at (opamp.+) {\textbf{B}};
+
 
       \draw (opamp.up) to[short,-*] ++(0,0.5) node[right]{$\mathrm{+15V}$};
       \draw (opamp.down) to[short,-*] ++(0,-0.5) node[right]{$\mathrm{-15V}$};
@@ -326,8 +378,241 @@ The circuit diagram for OpAmp as a subtractor is shown below.
 \caption{Circuit diagram of OpAmp as a Subtractor}
 \label{fig:subs}
 \end{figure}
+\noindent
+Again, by applying the concept of virtual ground, we know that the potntial at point $\textbf{A}$ and at the point $\textbf{B}$ is the same. Let the potential at point $\textbf{A}$ and $\textbf{B}$ be $V$. Thus, by applying Kirchoff's current law at point A, we get
+\begin{align*}
+  \frac{V-V_1}{R_1}=\frac{V_{out}-V}{R_f}
+\end{align*}
+Similarly, by applying Kirchoff's current law at point B, we get
+\begin{align*}
+  \frac{V-V_2}{R_2}=\frac{-V}{R_0}
+\end{align*}
+Solving for $V_{out}$, we get
 
+\begin{align*}
+  V_{out} = \frac{R_f}{R_1} \left(\frac{V_2 R_0}{R_0 + R_2} - V_1 \right) + \frac{V_2 R_0}{R_0 + R_2} 
+\end{align*}
+In the special case when $R_1=R_2=R_f=R_0=R$, the output voltage is given by
+\begin{align*}
+  V_{out} = V_2 - V_1
+\end{align*}
+Thus, the OpAmp acts as a subtractor in this case by subtracting the input voltages.
 \section{Data and Analysis}
+\subsection*{Inverting Amplifier}
+\begin{table}[H]
+  \centering
+  \begin{subtable}{0.48\textwidth}
+      \centering
+      \begin{tabular}{|c| c| c|}
+          \hline
+          $V_{in}$ & $V_{out}$ & A \\
+          \hline
+          1.00 & -2.20 & -2.20 \\
+          2.00 & -4.38 & -2.19 \\
+          3.00 & -6.57 & -2.19 \\
+          4.00 & -8.75 & -2.19 \\
+          5.00 & -10.93 & -2.19 \\
+          \hline
+          \multicolumn{3}{|c|} {Average = -2.19} \\
+          \hline
+      \end{tabular}
+      \caption{$R_i=996\Omega, R_f=2170\Omega$}
+      \label{tab:first}
+  \end{subtable}
+  \hfill
+  \begin{subtable}{0.48\textwidth}
+      \centering
+      \begin{tabular}{|c| c| c|}
+          \hline
+          $V_{in}$ & $V_{out}$ & A \\
+          \hline
+          0.02 & -0.18 & -9.00 \\
+          0.20 & -2.03 & -10.15 \\
+          0.40 & -4.04 & -10.10 \\
+          0.60 & -6.01 & -10.02 \\
+          0.79 & -7.95 & -10.06 \\
+          \hline
+          \multicolumn{2}{|c|}{Average} & -9.87 \\
+          \hline
+      \end{tabular}
+      \caption{$R_i=996\Omega, R_f=9850\Omega$}      
+      \label{tab:second}
+  \end{subtable}
+  
+  \bigskip
+  \bigskip
+
+  \begin{subtable}{0.48\textwidth}
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        $V_{in}$ & $V_{out}$ & A \\
+        \hline
+        0.50 & -2.30 & -4.60 \\
+        1.00 & -4.59 & -4.59 \\
+        1.50 & -6.85 & -4.57 \\
+        2.00 & -9.16 & -4.58 \\
+        2.50 & -11.44 & -4.58 \\
+        \hline
+        \multicolumn{3}{|c|}{Average: $A = -4.58$} \\
+        \hline
+    \end{tabular}
+    \caption{$R_i=2160\Omega, R_f=9850\Omega$}
+    \label{tab:first}
+\end{subtable}
+\hfill
+\begin{subtable}{0.48\textwidth}
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        $V_{in}$ & $V_{out}$ & A \\
+        \hline
+        2.00 & -0.90 & -0.45 \\
+        4.00 & -1.80 & -0.45 \\
+        6.00 & -2.71 & -0.45 \\
+        8.00 & -3.62 & -0.45 \\
+        10.00 & -4.53 & -0.45 \\
+        \hline
+        \multicolumn{3}{|c|}{Average: $A = -0.45$} \\
+        \hline
+    \end{tabular}
+    \caption{$R_i=21800\Omega, R_f=9850\Omega$}
+    \label{tab:second}
+    \end{subtable}
+  \caption{Data for Inverting Amplifier}
+  \label{tab:combined}
+\end{table}
+
+\subsection*{Non-Inverting Amplifier}
+\begin{table}[H]
+  \centering
+  \begin{subtable}{0.48\textwidth}
+      \centering
+      \begin{tabular}{|c| c| c|}
+          \hline
+          $V_{in}$ & $V_{out}$ & A \\
+          \hline
+          1.00 & 3.20 & 3.20 \\
+          1.50 & 4.77 & 3.18 \\
+          2.00 & 6.35 & 3.18 \\
+          3.00 & 9.54 & 3.18 \\
+          4.00 & 12.69 & 3.17 \\
+          \hline
+          \multicolumn{3}{|c|} {Average = 3.18} \\
+          \hline
+      \end{tabular}
+      \caption{$R_i=1006\Omega, R_f=2160\Omega$}
+  \end{subtable}
+  \hfill
+  \begin{subtable}{0.48\textwidth}
+      \centering
+      \begin{tabular}{|c| c| c|}
+          \hline
+          $V_{in}$ & $V_{out}$ & A \\
+          \hline
+          1.00 & 2.02 & 2.02 \\
+          2.00 & 4.04 & 2.02 \\
+          3.00 & 6.07 & 2.02 \\
+          4.00 & 8.10 & 2.03 \\
+          5.00 & 10.10 & 2.02 \\
+          \hline
+          \multicolumn{3}{|c|}{Average = 2.02} \\
+          \hline
+      \end{tabular}
+      \caption{$R_i=985\Omega, R_f=983\Omega$}      
+  \end{subtable}
+  
+  \bigskip
+  
+  \begin{subtable}{0.48\textwidth}
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        $V_{in}$ & $V_{out}$ & A \\
+        \hline
+        1.00 & 1.12 & 1.12 \\
+        3.00 & 3.33 & 1.11 \\
+        5.00 & 5.54 & 1.11 \\
+        7.00 & 7.75 & 1.11 \\
+        9.00 & 9.96 & 1.11 \\
+        \hline
+        \multicolumn{3}{|c|}{Average = 1.11} \\
+        \hline
+    \end{tabular}
+    \caption{$R_i=21800\Omega, R_f=2170\Omega$}
+\end{subtable}
+\hfill
+\begin{subtable}{0.48\textwidth}
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        $V_{in}$ & $V_{out}$ & A \\
+        \hline
+        0.50 & 2.84 & 5.68 \\
+        1.00 & 5.60 & 5.60 \\
+        1.50 & 8.38 & 5.59 \\
+        2.00 & 11.18 & 5.59 \\
+        2.50 & 13.97 & 5.59 \\
+        \hline
+        \multicolumn{3}{|c|}{Average = 5.61} \\
+        \hline
+    \end{tabular}
+    \caption{$R_i=2170\Omega, R_f=9850\Omega$}
+\end{subtable}
+  
+  \caption{Data for Amplifier Gain for Non-Inverting Amplifier}
+  \label{tab:combined2}
+\end{table}
+
+\subsection*{Adder}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        $V_1$ & $V_2$ & $V_3$ & $V_{out}$ & $V_\text{{Theoretical}}$ \\
+        \hline
+        0.72 & 1.02 & 1.45 & 3.15 & 3.19 \\
+        1.44 & 1.73 & 2.92 & 6.01 & 6.09 \\
+        1.27 & 1.99 & 2.04 & 5.23 & 5.30 \\
+        1.52 & 1.31 & 2.16 & 4.92 & 4.99 \\
+        1.40 & 1.40 & 2.81 & 5.55 & 5.61 \\
+        1.78 & 1.67 & 3.01 & 6.34 & 6.46 \\
+        0.41 & 0.45 & 0.82 & 1.66 & 1.68 \\
+        0.52 & 0.74 & 1.05 & 2.26 & 2.31 \\
+        1.65 & 2.75 & 3.31 & 7.52 & 7.71 \\
+        1.11 & 1.85 & 2.23 & 5.03 & 5.19 \\
+        \hline
+    \end{tabular}
+    \caption{OpAmp as an Adder}
+    \label{tab:voltage_data_adder}
+\end{table}
+
+
+\subsection*{Subtractor}
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|c|c|c|c|}
+      \hline
+      $V_1$ & $V_2$ & $V_{out}$ & $V_{\text{Theoretical}}$ \\
+      \hline
+      3.60 & 4.80  & 1.14  & 1.20 \\
+      2.55 & 3.18  & 0.60  & 0.63 \\
+      0.82 & 3.55  & 2.68  & 2.73 \\
+      5.18 & 6.93  & 1.65  & 1.75 \\
+      6.67 & 8.91  & 2.12  & 2.24 \\
+      0.46 & 0.61  & 0.15  & 0.15 \\
+      1.93 & 2.58  & 0.63  & 0.65 \\
+      3.61 & 4.85  & 1.19  & 1.24 \\
+      4.57 & 5.55  & 0.95  & 0.98 \\
+      9.02 & 12.03 & 2.85  & 3.01 \\
+      \hline
+  \end{tabular}
+  \caption{OpAmp as a Subtractor}
+  \label{tab:voltage_data2}
+\end{table}
+
 \section{Results and Discussion}
 \section{Sources of Error}
 
