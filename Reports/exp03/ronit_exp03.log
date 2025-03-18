@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.4)  18 MAR 2025 21:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.4)  18 MAR 2025 21:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -601,20 +601,7 @@ Package caption Info: New subtype `subfigure' on input line 238.
 \c@subfigure=\count338
 Package caption Info: New subtype `subtable' on input line 238.
 \c@subtable=\count339
-) (ronit_exp03.aux
-
-LaTeX Warning: Label `tab:first' multiply defined.
-
-
-LaTeX Warning: Label `sub@tab:first' multiply defined.
-
-
-LaTeX Warning: Label `tab:second' multiply defined.
-
-
-LaTeX Warning: Label `sub@tab:second' multiply defined.
-
-)
+) (ronit_exp03.aux)
 \openout1 = `ronit_exp03.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
@@ -780,23 +767,19 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-10-09>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `ronit_exp03.out' has not changed.
-(rerunfilecheck)             Checksum: D1F192D7556CCDB03A617CE477C57A69;1228.
+(rerunfilecheck)             Checksum: 89133C3D7505BD5A0D07253882B489CE;1167.
  ) 
 Here is how much of TeX's memory you used:
- 43244 strings out of 473702
- 1025168 string characters out of 5716070
- 1658099 words of memory out of 5000000
- 65810 multiletter control sequences out of 15000+600000
+ 43269 strings out of 473702
+ 1025862 string characters out of 5716070
+ 1658003 words of memory out of 5000000
+ 65835 multiletter control sequences out of 15000+600000
  573654 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,107p,492b,966s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Ronit Bhuyan\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Ronit Bhuyan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Users/Ronit Bhuyan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Ronit Bhuyan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Ronit Bhuyan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/Ronit Bhuyan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Ronit Bhuyan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Ronit Bhuyan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Ronit Bhuyan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Ronit Bhuyan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Ronit Bhuyan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Ronit Bhuyan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Ronit Bhuyan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Ronit Bhuyan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on ronit_exp03.pdf (7 pages, 181260 bytes).
+Output written on ronit_exp03.pdf (7 pages, 181247 bytes).
 PDF statistics:
  188 PDF objects out of 1000 (max. 8388607)
  35 named destinations out of 1000 (max. 500000)

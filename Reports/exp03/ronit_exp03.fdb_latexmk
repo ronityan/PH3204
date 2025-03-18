@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1742312814.19224 "d:/ronit/IISER-K/6 SEM/PH3204/Reports/exp03/ronit_exp03.tex" "ronit_exp03.pdf" "ronit_exp03" 1742312816.04912 0
+["pdflatex"] 1742313556.22413 "d:/ronit/IISER-K/6 SEM/PH3204/Reports/exp03/ronit_exp03.tex" "ronit_exp03.pdf" "ronit_exp03" 1742313557.97934 0
   "C:/Users/Ronit Bhuyan/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1739711902 124616 f56cfe5d57a59e17f3a3bc9e98d8c4e9 ""
   "C:/Users/Ronit Bhuyan/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1725563239 14064 13a2a1bceb61b4134538f9d2923ceb2a ""
   "C:/Users/Ronit Bhuyan/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1730738813 11988859 aa955a41b8e5d41c5bb18f6c790e3104 ""
@@ -205,11 +205,11 @@
   "C:/Users/Ronit Bhuyan/AppData/Local/Programs/MiKTeX/tex/latex/tools/longtable.sty" 1730400552 15900 3cb191e576c7a313634d2813c55d4bf1 ""
   "C:/Users/Ronit Bhuyan/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Ronit Bhuyan/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "d:/ronit/IISER-K/6 SEM/PH3204/Reports/exp03/ronit_exp03.tex" 1742312813 24757 cf9bab2295b61ca320255715cb664899 ""
-  "ronit_exp03.aux" 1742312815 4597 dd0efddfe83967f298cc223ff58dc99b "pdflatex"
-  "ronit_exp03.out" 1742312815 1228 d1f192d7556ccdb03a617ce477c57a69 "pdflatex"
-  "ronit_exp03.tex" 1742312813 24757 cf9bab2295b61ca320255715cb664899 ""
-  "ronit_exp03.toc" 1742312815 701 06315a36345a7664afb03efc35666a98 "pdflatex"
+  "d:/ronit/IISER-K/6 SEM/PH3204/Reports/exp03/ronit_exp03.tex" 1742313553 24855 837646a8e6a2cd4544fc3458d5cdfc71 ""
+  "ronit_exp03.aux" 1742313557 4588 dbb4efe9febe800e20df188b09937336 "pdflatex"
+  "ronit_exp03.out" 1742313557 1167 89133c3d7505bd5a0d07253882b489ce "pdflatex"
+  "ronit_exp03.tex" 1742313553 24855 837646a8e6a2cd4544fc3458d5cdfc71 ""
+  "ronit_exp03.toc" 1742313557 690 41846b0d83d33e0ccf9c9d337f0da4b1 "pdflatex"
   (generated)
   "ronit_exp03.aux"
   "ronit_exp03.log"
