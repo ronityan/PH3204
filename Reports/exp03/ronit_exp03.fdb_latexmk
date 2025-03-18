@@ -1,7 +1,9 @@
 # Fdb version 4
-["pdflatex"] 1742238713.44383 "d:/ronit/IISER-K/6 SEM/PH3204/Reports/exp03/ronit_exp03.tex" "ronit_exp03.pdf" "ronit_exp03" 1742238716.33536 0
+["pdflatex"] 1742312814.19224 "d:/ronit/IISER-K/6 SEM/PH3204/Reports/exp03/ronit_exp03.tex" "ronit_exp03.pdf" "ronit_exp03" 1742312816.04912 0
   "C:/Users/Ronit Bhuyan/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1739711902 124616 f56cfe5d57a59e17f3a3bc9e98d8c4e9 ""
+  "C:/Users/Ronit Bhuyan/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1725563239 14064 13a2a1bceb61b4134538f9d2923ceb2a ""
   "C:/Users/Ronit Bhuyan/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1730738813 11988859 aa955a41b8e5d41c5bb18f6c790e3104 ""
+  "C:/Users/Ronit Bhuyan/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/tcrm1200.tfm" 993062508 1444 95ffe0f19b974d50849790c8225c7ef7 ""
   "C:/Users/Ronit Bhuyan/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1233951848 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "C:/Users/Ronit Bhuyan/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1233951848 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
   "C:/Users/Ronit Bhuyan/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -203,11 +205,11 @@
   "C:/Users/Ronit Bhuyan/AppData/Local/Programs/MiKTeX/tex/latex/tools/longtable.sty" 1730400552 15900 3cb191e576c7a313634d2813c55d4bf1 ""
   "C:/Users/Ronit Bhuyan/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/Ronit Bhuyan/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "d:/ronit/IISER-K/6 SEM/PH3204/Reports/exp03/ronit_exp03.tex" 1742238712 21937 41319c3a5c2826507d0cd462f5187fad ""
-  "ronit_exp03.aux" 1742238716 4231 ac8f6728bd0a529008a78675a406e73f "pdflatex"
-  "ronit_exp03.out" 1742238716 1228 d1f192d7556ccdb03a617ce477c57a69 "pdflatex"
-  "ronit_exp03.tex" 1742238712 21937 41319c3a5c2826507d0cd462f5187fad ""
-  "ronit_exp03.toc" 1742238716 701 06315a36345a7664afb03efc35666a98 "pdflatex"
+  "d:/ronit/IISER-K/6 SEM/PH3204/Reports/exp03/ronit_exp03.tex" 1742312813 24757 cf9bab2295b61ca320255715cb664899 ""
+  "ronit_exp03.aux" 1742312815 4597 dd0efddfe83967f298cc223ff58dc99b "pdflatex"
+  "ronit_exp03.out" 1742312815 1228 d1f192d7556ccdb03a617ce477c57a69 "pdflatex"
+  "ronit_exp03.tex" 1742312813 24757 cf9bab2295b61ca320255715cb664899 ""
+  "ronit_exp03.toc" 1742312815 701 06315a36345a7664afb03efc35666a98 "pdflatex"
   (generated)
   "ronit_exp03.aux"
   "ronit_exp03.log"

@@ -56,9 +56,9 @@
 \subsection{Operational Amplifier (OpAmp)}
 An Operational Amplifier or OpAmp is a differential amplifier that has a very high voltage gain, high input impedance and low output impedance. The OpAmp ha two inputs namely a non-inverting input($V_+$) and an inverting input($V_-$). The OpAmp amplifies the difference between the two inputs. The output voltage ($V_{out}$) is given by 
 \begin{align*}
-    V_{out} = A(V_+ - V_-)
+    V_{out} = A_0(V_+ - V_-)
 \end{align*} 
-where $A$ is the open loop gain of the amplifier. The OpAmp is usually operated with a negative feedback. The OpAmp used in this experiment is the LM741 OpAmp. The pin configuration of the LM741 OpAmp and its circuit diagram is shown in the figure below.
+where $A_0$ is the open loop gain of the amplifier. The OpAmp is usually operated with a negative feedback. The OpAmp used in this experiment is the LM741 OpAmp. The pin configuration of the LM741 OpAmp and its circuit diagram is shown in the figure below.
 
 
 
@@ -236,19 +236,19 @@ The OpAmp can be used as an inverting amplifier by connecting it as per the foll
 \caption{Circuit diagram of OpAmp as an Inverting Amplifier}
   
 \end{figure}
-\noindent
 
-At the point A, the voltgae is 0 due to virtual ground. Theus, by applying Kirchoff's current law at the point A, we get 
-\begin{align*}
+\noindent
+At the point \textbf{A}, the voltgae is 0 due to virtual ground. Theus, by applying Kirchoff's current law at the point \textbf{A}, we get 
+\begin{align*}\label{eq:inverting}
   \frac{V_{in}-0}{R_1}= \frac{0-V_{out}}{R_f}
   \implies V_{out} = -\frac{R_f}{R_1}V_{in}
 \end{align*}
-Hence, the amplification in the case of inverting amplifier is given by
-\begin{align*}
+Hence, the amplification $A_0$ in the case of inverting amplifier is given by
+\begin{equation}\label{eq:inv}
   \boxed{
-    A = -\frac{R_f}{R_1}
+    A_0 = -\frac{R_f}{R_1}
   }
-\end{align*}
+\end{equation}
 
 
 
@@ -285,18 +285,21 @@ The circuit diagram of an OpAmp as a non-inverting amplifier is shown below.
 \caption{Circuit diagram of OpAmp as a Non-Inverting Amplifier}
 \end{figure}
 
-At point A, the potential is $V_in$. Thus, by applying Kirchoff's current law at point A, we get
+\noindent
+At point \textbf{A}, the potential is $V_{in}$. Thus, by applying Kirchoff's current law at point \textbf{A}, we get
 \begin{align*}
   \frac{V_{in}-V_{out}}{R_1} = \frac{V_{out}-0}{R_f}
   \implies V_{out} = \left(1+\frac{R_f}{R_1}\right)V_{in}
 \end{align*}
-Hence, the amplification in the case of non-inverting amplifier is given by
-\begin{align*}
+Hence, the amplification $A_0$ in the case of non-inverting amplifier is given by
+\begin{equation}\label{eq:noninv}
   \boxed{
-    A = 1+\frac{R_f}{R_1}
+    A_0 = 1+\frac{R_f}{R_1}
   }
-\end{align*}
+\end{equation}
   
+
+
 \subsection{Adder}
 The OpAmp can be used as an adder by connecting it as per the following circuit diagram.
 \begin{figure}[H]
@@ -334,16 +337,18 @@ The OpAmp can be used as an adder by connecting it as per the following circuit 
 \label{fig:adder}
 \end{figure}
 \noindent
-Similar to the case of the inverting and non-inverting amplifiers, the potential at the point A is 0. Thus, by applying Kirchoff's current law at point A, we get
+Similar to the case of the inverting and non-inverting amplifiers, the potential at the point \textbf{A} is 0. Thus, by applying Kirchoff's current law at point \textbf{A}, we get
 \begin{align*}
   \frac{0-V_1}{R_1}+\frac{0-V_2}{R_2}+\frac{0-V_3}{R_3} = \frac{V_{out}}{R_f}\\
   \implies V_{out} = -\left(\frac{R_f}{R_1}V_1+\frac{R_f}{R_2}V_2+\frac{R_f}{R_3}V_3\right)
 \end{align*}
 In the special case when $R_1=R_2=R_3=R_f=R$, the output voltage is given by
-\begin{align*}
-  V_{out} = -(V_1+V_2+V_3)
-\end{align*}
+\begin{equation}\label{eq:add}
+    \boxed{V_{out} = -(V_1+V_2+V_3)}
+\end{equation}
 Thus, the OpAmp acts as an adder in this case by addiing the input voltages.
+
+
 
 \subsection{Subtractor}
 The circuit diagram for OpAmp as a subtractor is shown below. 
@@ -393,19 +398,24 @@ Solving for $V_{out}$, we get
   V_{out} = \frac{R_f}{R_1} \left(\frac{V_2 R_0}{R_0 + R_2} - V_1 \right) + \frac{V_2 R_0}{R_0 + R_2} 
 \end{align*}
 In the special case when $R_1=R_2=R_f=R_0=R$, the output voltage is given by
-\begin{align*}
-  V_{out} = V_2 - V_1
-\end{align*}
+\begin{equation}\label{eq:sub}
+ \boxed{ V_{out} = V_2 - V_1}
+\end{equation}
 Thus, the OpAmp acts as a subtractor in this case by subtracting the input voltages.
+
+
+
 \section{Data and Analysis}
 \subsection*{Inverting Amplifier}
+Here, we present the data collected for the inverting amplifier for various combinations of $R_i$ and $R_f$. The data is presented below in Table \ref{tab:combined}.
+
 \begin{table}[H]
   \centering
   \begin{subtable}{0.48\textwidth}
       \centering
       \begin{tabular}{|c| c| c|}
           \hline
-          $V_{in}$ & $V_{out}$ & A \\
+          $V_{in}$ & $V_{out}$ & Amplification($A_0$) \\
           \hline
           1.00 & -2.20 & -2.20 \\
           2.00 & -4.38 & -2.19 \\
@@ -413,7 +423,8 @@ Thus, the OpAmp acts as a subtractor in this case by subtracting the input volta
           4.00 & -8.75 & -2.19 \\
           5.00 & -10.93 & -2.19 \\
           \hline
-          \multicolumn{3}{|c|} {Average = -2.19} \\
+          \multicolumn{3}{|c|} {Average $A_0$ = -2.19} \\
+          \multicolumn{3}{|c|} {Theoretical Value = -2.18} \\
           \hline
       \end{tabular}
       \caption{$R_i=996\Omega, R_f=2170\Omega$}
@@ -424,7 +435,7 @@ Thus, the OpAmp acts as a subtractor in this case by subtracting the input volta
       \centering
       \begin{tabular}{|c| c| c|}
           \hline
-          $V_{in}$ & $V_{out}$ & A \\
+          $V_{in}$ & $V_{out}$ & Amplification($A_0$) \\
           \hline
           0.02 & -0.18 & -9.00 \\
           0.20 & -2.03 & -10.15 \\
@@ -432,7 +443,8 @@ Thus, the OpAmp acts as a subtractor in this case by subtracting the input volta
           0.60 & -6.01 & -10.02 \\
           0.79 & -7.95 & -10.06 \\
           \hline
-          \multicolumn{2}{|c|}{Average} & -9.87 \\
+          \multicolumn{3}{|c|}{Average $A_0$ = -9.87} \\
+          \multicolumn{3}{|c|}{Theoretical Value = -9.89} \\
           \hline
       \end{tabular}
       \caption{$R_i=996\Omega, R_f=9850\Omega$}      
@@ -446,7 +458,7 @@ Thus, the OpAmp acts as a subtractor in this case by subtracting the input volta
     \centering
     \begin{tabular}{|c|c|c|}
         \hline
-        $V_{in}$ & $V_{out}$ & A \\
+        $V_{in}$ & $V_{out}$ & Amplification($A_0$) \\
         \hline
         0.50 & -2.30 & -4.60 \\
         1.00 & -4.59 & -4.59 \\
@@ -454,7 +466,8 @@ Thus, the OpAmp acts as a subtractor in this case by subtracting the input volta
         2.00 & -9.16 & -4.58 \\
         2.50 & -11.44 & -4.58 \\
         \hline
-        \multicolumn{3}{|c|}{Average: $A = -4.58$} \\
+        \multicolumn{3}{|c|}{Average $A_0$ = 4.58} \\
+        \multicolumn{3}{|c|}{Theoretical Value = -4.56} \\
         \hline
     \end{tabular}
     \caption{$R_i=2160\Omega, R_f=9850\Omega$}
@@ -465,7 +478,7 @@ Thus, the OpAmp acts as a subtractor in this case by subtracting the input volta
     \centering
     \begin{tabular}{|c|c|c|}
         \hline
-        $V_{in}$ & $V_{out}$ & A \\
+        $V_{in}$ & $V_{out}$ & Amplification($A_0$) \\
         \hline
         2.00 & -0.90 & -0.45 \\
         4.00 & -1.80 & -0.45 \\
@@ -473,24 +486,28 @@ Thus, the OpAmp acts as a subtractor in this case by subtracting the input volta
         8.00 & -3.62 & -0.45 \\
         10.00 & -4.53 & -0.45 \\
         \hline
-        \multicolumn{3}{|c|}{Average: $A = -0.45$} \\
+        \multicolumn{3}{|c|}{Average $A_0$ = -0.45} \\
+        \multicolumn{3}{|c|}{Theoretical Value = -0.45} \\
         \hline
     \end{tabular}
     \caption{$R_i=21800\Omega, R_f=9850\Omega$}
     \label{tab:second}
     \end{subtable}
-  \caption{Data for Inverting Amplifier}
+  \caption{Data for Inverting Amplifier for various combinations of $R_i$ and $R_f$}
   \label{tab:combined}
 \end{table}
 
 \subsection*{Non-Inverting Amplifier}
+
+Here, we present the data collected for the inverting amplifier for various combinations of $R_i$ and $R_f$. The data is presented below in Table \ref{tab:combined2}.
+
 \begin{table}[H]
   \centering
   \begin{subtable}{0.48\textwidth}
       \centering
       \begin{tabular}{|c| c| c|}
           \hline
-          $V_{in}$ & $V_{out}$ & A \\
+          $V_{in}$ & $V_{out}$ & Amplification($A_0$) \\
           \hline
           1.00 & 3.20 & 3.20 \\
           1.50 & 4.77 & 3.18 \\
@@ -498,7 +515,8 @@ Thus, the OpAmp acts as a subtractor in this case by subtracting the input volta
           3.00 & 9.54 & 3.18 \\
           4.00 & 12.69 & 3.17 \\
           \hline
-          \multicolumn{3}{|c|} {Average = 3.18} \\
+          \multicolumn{3}{|c|} {Average $A_0$ = 3.18} \\
+          \multicolumn{3}{|c|}{Theoretical Value = 3.15} \\
           \hline
       \end{tabular}
       \caption{$R_i=1006\Omega, R_f=2160\Omega$}
@@ -508,7 +526,7 @@ Thus, the OpAmp acts as a subtractor in this case by subtracting the input volta
       \centering
       \begin{tabular}{|c| c| c|}
           \hline
-          $V_{in}$ & $V_{out}$ & A \\
+          $V_{in}$ & $V_{out}$ & Amplification($A_0$) \\
           \hline
           1.00 & 2.02 & 2.02 \\
           2.00 & 4.04 & 2.02 \\
@@ -516,7 +534,8 @@ Thus, the OpAmp acts as a subtractor in this case by subtracting the input volta
           4.00 & 8.10 & 2.03 \\
           5.00 & 10.10 & 2.02 \\
           \hline
-          \multicolumn{3}{|c|}{Average = 2.02} \\
+          \multicolumn{3}{|c|}{Average $A_0$ = 2.02} \\
+          \multicolumn{3}{|c|}{Theoretical Value = 2.00} \\
           \hline
       \end{tabular}
       \caption{$R_i=985\Omega, R_f=983\Omega$}      
@@ -528,7 +547,7 @@ Thus, the OpAmp acts as a subtractor in this case by subtracting the input volta
     \centering
     \begin{tabular}{|c|c|c|}
         \hline
-        $V_{in}$ & $V_{out}$ & A \\
+        $V_{in}$ & $V_{out}$ & Amplification($A_0$) \\
         \hline
         1.00 & 1.12 & 1.12 \\
         3.00 & 3.33 & 1.11 \\
@@ -536,7 +555,8 @@ Thus, the OpAmp acts as a subtractor in this case by subtracting the input volta
         7.00 & 7.75 & 1.11 \\
         9.00 & 9.96 & 1.11 \\
         \hline
-        \multicolumn{3}{|c|}{Average = 1.11} \\
+        \multicolumn{3}{|c|}{Average $A_0$ = 1.11} \\
+        \multicolumn{3}{|c|}{Theoretical Value = 1.01} \\
         \hline
     \end{tabular}
     \caption{$R_i=21800\Omega, R_f=2170\Omega$}
@@ -546,7 +566,7 @@ Thus, the OpAmp acts as a subtractor in this case by subtracting the input volta
     \centering
     \begin{tabular}{|c|c|c|}
         \hline
-        $V_{in}$ & $V_{out}$ & A \\
+        $V_{in}$ & $V_{out}$ & Amplification($A_0$) \\
         \hline
         0.50 & 2.84 & 5.68 \\
         1.00 & 5.60 & 5.60 \\
@@ -554,23 +574,26 @@ Thus, the OpAmp acts as a subtractor in this case by subtracting the input volta
         2.00 & 11.18 & 5.59 \\
         2.50 & 13.97 & 5.59 \\
         \hline
-        \multicolumn{3}{|c|}{Average = 5.61} \\
+        \multicolumn{3}{|c|}{Average $A_0$ = 5.61} \\
+        \multicolumn{3}{|c|}{Theoretical Value = 5.53} \\
         \hline
     \end{tabular}
     \caption{$R_i=2170\Omega, R_f=9850\Omega$}
 \end{subtable}
   
-  \caption{Data for Amplifier Gain for Non-Inverting Amplifier}
+  \caption{Data for Non-Inverting Amplifier for various combinations of $R_i$ and $R_f$}
   \label{tab:combined2}
 \end{table}
 
 \subsection*{Adder}
 
+In this section, we present the data collected for the OpAmp as an adder for various combinations of $R_i$ and $R_f$. The data is presented below in Table \ref{tab:voltage_data_adder}.
+
 \begin{table}[H]
     \centering
     \begin{tabular}{|c|c|c|c|c|}
         \hline
-        $V_1$ & $V_2$ & $V_3$ & $V_{out}$ & $V_\text{{Theoretical}}$ \\
+        $V_1$ & $V_2$ & $V_3$ & $V_{out}(\text{Experimental})$ & $V_{out}(\text{Theoretical})$  \\
         \hline
         0.72 & 1.02 & 1.45 & 3.15 & 3.19 \\
         1.44 & 1.73 & 2.92 & 6.01 & 6.09 \\
@@ -590,12 +613,13 @@ Thus, the OpAmp acts as a subtractor in this case by subtracting the input volta
 
 
 \subsection*{Subtractor}
+Finally, we have tabulated the data collected for the OpAmp as a subtractor for various combinations of $R_i$ and $R_f$. The data is presented below in Table \ref{tab:voltage_data2}.
 
 \begin{table}[H]
   \centering
   \begin{tabular}{|c|c|c|c|}
       \hline
-      $V_1$ & $V_2$ & $V_{out}$ & $V_{\text{Theoretical}}$ \\
+      $V_1$ & $V_2$ & $V_{out}(\text{Experimental})$ & $V_{out}(\text{Theoretical})$ \\
       \hline
       3.60 & 4.80  & 1.14  & 1.20 \\
       2.55 & 3.18  & 0.60  & 0.63 \\
@@ -614,6 +638,18 @@ Thus, the OpAmp acts as a subtractor in this case by subtracting the input volta
 \end{table}
 
 \section{Results and Discussion}
+In this experiment, we have studied the use of an OpAmp as an amplifier (non-inverting and inverting) , adder and a subtractor. 
+In case of the inverting and non-inverting amplifier, we experimented with the values of $R_i$ and $R_f$ and calculated the amplification factor $A_0$, which matched pretty well to the the theoretical value calculated using the equation \ref{eq:inv} and \ref{eq:noninv}.
+
+\noindent
+Similarly, for the adder and subtractor, we experimented with the values of $R_i$ and $R_f$ and calculated the output voltage $V_{out}$, which accurately matched to the the theoretical value calculated using the equation \ref{eq:add} and \ref{eq:sub}.
+
+
+
 \section{Sources of Error}
+\begin{itemize}
+  \item There can be errors while measuring the resistance values of the resistors used in the circuit due to the internal resistances of the given multimeters. This can potentially lead to errors in the calculation of the amplification factor.
+  \item Similarly, the may also be erros in the calculated values of the output voltage due to the internal resistance of the used multimeters.
+\end{itemize}
 
 \end{document}
