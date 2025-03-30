@@ -1,0 +1,453 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[a4paper, margin=0.98in]{geometry}
+\usepackage{physics}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{makecell}
+\usepackage{helvet}
+\usepackage{fancyhdr}
+\usepackage{titling}
+\usepackage{longtable}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage[american]{circuitikz}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tikz}
+\usepackage{subcaption}
+\ctikzset{logic ports=ieee}
+
+
+
+
+
+% Define header
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{PH3204: Electronics Laboratory}
+
+% Title
+\title{
+  \vspace{-2cm}
+  \Huge \textbf{PH3204: Electronics Laboratory} \\[0.4cm]
+  \Large \textbf{Experiment 04:  Study of Boolean algebra truth tables for Logic Gate functions using AND, OR, NAND,
+  NOR etc. ICs}
+}
+
+\author{
+  \textbf{Ronit Bhuyan (22MS025)} \\[0.2cm]
+  \textbf{Sub-Group B01}
+}
+
+\date{\today}
+
+\begin{document}
+
+
+\maketitle
+
+\tableofcontents
+\noindent\rule{\textwidth}{0.4pt}
+\newpage
+
+\section{Theory}
+Boolean algebra delas with variables only two possible output,$0$ and $1$ (false and true). A Boolean function takes in one or more boolean inputs and produces a bollean output. A boolean function can be implemented in the form of a boolean circuit using logic gates. Some of the most common logic gates along with their truth tables are given below:
+
+
+\begin{itemize}
+
+\item \textbf{NOT Gate}\\
+  \begin{minipage}[t]{0.45\textwidth}
+    \begin{figure}[H]
+      \begin{center}
+        \centering
+      \end{center}
+      \begin{circuitikz}
+        %       draw a not gate 
+        \draw (0,0) node[not port] (not1) {};
+        \draw (not1.in) -- ++(-1,0) node[left] {$A$};
+        \draw (not1.out) -- ++(1,0) node[right] {$\overline{A}$};
+      \end{circuitikz}
+      \caption{Symbol of NOT Gate}
+      \label{fig:not}
+    \end{figure}
+  \end{minipage}%
+  \begin{minipage}[t]{0.45\textwidth}
+    \begin{table}[H]
+      \centering
+      \begin{tabular}{|c||c|}
+        \hline
+        $A$ & $\overline{A}$ \\ \hline
+        0 & 1 \\ \hline
+        1 & 0 \\ \hline
+      \end{tabular}
+      \caption{Truth Table for NOT Gate}
+      \label{tab:not}
+    \end{table}
+  \end{minipage}
+
+
+\item \textbf{AND Gate}\\
+\begin{minipage}[t]{0.45\textwidth}
+\begin{figure}[H]
+  \centering
+  \begin{circuitikz}
+    \draw (0,0) node[and port] (myport) {};
+    \draw (myport.in 1) -- ++(-1,0) node[left] {$A$};
+    \draw (myport.in 2) -- ++(-1,0) node[left] {$B$};
+    \draw (myport.out) -- ++(1,0) node[right] {$A \cdot B$};
+  \end{circuitikz}
+\end{figure}
+\end{minipage}%
+\begin{minipage}[t]{0.45\textwidth}
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|c|c|c|}
+    \hline
+    $A$ & $B$ & $A \cdot B$ \\ \hline
+    0 & 0 & 0 \\ \hline
+    0 & 1 & 0 \\ \hline
+    1 & 0 & 0 \\ \hline
+    1 & 1 & 1 \\ \hline
+\end{tabular}
+\caption{Truth Table for AND Gate}
+\label{tab:and}
+\end{table}
+\end{minipage}
+
+\item \textbf{OR Gate}\\
+\begin{minipage}[t]{0.45\textwidth}
+\begin{figure}[H]
+  \centering
+  \begin{circuitikz}
+    \draw (0,0) node[or port] (myport) {};
+    \draw (myport.in 1) -- ++(-1,0) node[left] {$A$};
+    \draw (myport.in 2) -- ++(-1,0) node[left] {$B$};
+    \draw (myport.out) -- ++(1,0) node[right] {$A + B$};
+  \end{circuitikz}
+\end{figure}
+\end{minipage}%
+\begin{minipage}[t]{0.45\textwidth}
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|c|c|c|}
+    \hline
+    $A$ & $B$ & $A + B$ \\ \hline
+    0 & 0 & 0 \\ \hline
+    0 & 1 & 1 \\ \hline
+    1 & 0 & 1 \\ \hline
+    1 & 1 & 1 \\ \hline
+  \end{tabular}
+\caption{Truth Table for OR Gate}
+\label{tab:or}
+\end{table}
+\end{minipage}
+
+\item \textbf{NAND Gate}\\
+\begin{minipage}[t]{0.45\textwidth}
+\begin{figure}[H]
+  \centering
+  \begin{circuitikz}
+    \draw (0,0) node[nand port] (myport) {};
+    \draw (myport.in 1) -- ++(-1,0) node[left] {$A$};
+    \draw (myport.in 2) -- ++(-1,0) node[left] {$B$};
+    \draw (myport.out) -- ++(1,0) node[right] {$\overline{A \cdot B}$};
+  \end{circuitikz}
+\end{figure}
+\end{minipage}%
+\begin{minipage}[t]{0.45\textwidth}
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|c|c|c|}
+  \hline
+  $A$ & $B$ & $\overline{A \cdot B}$ \\ \hline
+  0 & 0 & 1 \\ \hline
+  0 & 1 & 1 \\ \hline
+  1 & 0 & 1 \\ \hline
+  1 & 1 & 0 \\ \hline
+  \end{tabular}
+  \caption{Truth Table for NAND Gate}
+  \label{tab:nand}
+\end{table}
+\end{minipage}
+
+\item \textbf{NOR Gate}\\
+\begin{minipage}[t]{0.45\textwidth}
+\begin{figure}[H]
+  \centering
+  \begin{circuitikz}
+    \draw (0,0) node[nor port] (myport) {};
+    \draw (myport.in 1) -- ++(-1,0) node[left] {$A$};
+    \draw (myport.in 2) -- ++(-1,0) node[left] {$B$};
+    \draw (myport.out) -- ++(1,0) node[right] {$\overline{A + B}$};
+  \end{circuitikz}
+\end{figure}
+\end{minipage}%
+\begin{minipage}[t]{0.45\textwidth}
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|c|c|c|}
+  \hline
+  $A$ & $B$ & $\overline{A + B}$ \\ \hline
+  0 & 0 & 1 \\ \hline
+  0 & 1 & 0 \\ \hline
+  1 & 0 & 0 \\ \hline
+  1 & 1 & 0 \\ \hline
+  \end{tabular}
+  \caption{Truth Table for NOR Gate}
+  \label{tab:nor}
+\end{table}
+
+\end{minipage}
+
+\item \textbf{XOR Gate}\\
+\begin{minipage}[t]{0.45\textwidth}
+\begin{figure}[H]
+  \centering
+  \begin{circuitikz}
+    \draw (0,0) node[xor port] (myport) {};
+    \draw (myport.in 1) -- ++(-1,0) node[left] {$A$};
+    \draw (myport.in 2) -- ++(-1,0) node[left] {$B$};
+    \draw (myport.out) -- ++(1,0) node[right] {$A \oplus B$};
+  \end{circuitikz}
+\end{figure}
+\end{minipage}%
+\begin{minipage}[t]{0.45\textwidth}
+  \begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|}
+      \hline
+      $A$ & $B$ & $\overline{A \oplus B}$ \\ \hline
+      0 & 0 & 0 \\ \hline
+      0 & 1 & 1 \\ \hline
+      1 & 0 & 1 \\ \hline
+      1 & 1 & 0 \\ \hline
+    \end{tabular}
+    \caption{Truth Table for XOR Gate}
+    \label{tab:xor}
+  \end{table}
+\end{minipage}
+\end{itemize}
+
+
+\section{Boolean Circuit Verification}
+
+\subsection{Example 1}
+
+\begin{figure}[H]
+  \centering
+  \begin{circuitikz}
+    \node[and port] (and1) at (0,0) {};
+    \draw (and1.in 1) -- ++(-1,0) node[left] {$A$};
+    \draw (and1.in 2) -- ++(-1,0) node[left] {$B$};
+
+    \node[nor port] (nor1) at (5,-0.25) {};
+
+    \node[nand port] (nand1) at (2.5,-2) {};
+
+    \node[or port] (or1) at (0,-5) {};
+    \draw (or1.in 1) -- ++(-1,0) node[left] {$C$};
+    \draw (or1.in 2) -- ++(-1,0) node[left] {$D$};
+
+    \draw (or1.out) -- ++(1,0) -| (nand1.in 2);
+    \draw (and1.in 2) -- ++(0,-1) -| (nand1.in 1);
+    \draw (and1.out) -- ++(1,0) -- (nor1.in 1);
+
+    \node[xor port] (xor) at (6,-5.25) {};
+
+    \node[and port] (and2) at (9,-2) {};
+
+    \draw (or1.out)  -- ++(1,0) |- (xor.in 2);
+
+    \draw (nand1.out) -- ++(0.25,0) -| (xor.in 1);
+
+    \draw (nor1.out) -- ++(0.25,0) -| (and2.in 1);
+    \draw (xor.out) -- ++(0.5,0) -| (and2.in 2);
+    \draw (and2.out) -- ++(1,0) node[right] {$Q$};
+
+    \draw (nand1.out) -- ++(0.25,0) -| (nor1.in 2);
+
+  \end{circuitikz}
+\end{figure}
+
+\begin{longtable}{|c|c|c|c||c|}
+	\hline
+    $\mathrm{A}$  & $\mathrm{B}$ & $\mathrm{C}$ & $\mathrm{D}$ & $\mathrm{Q}$ \\
+  \hline
+	\endfirsthead
+	\hline
+   $\mathrm{A}$  & $\mathrm{B}$ & $\mathrm{C}$ & $\mathrm{D}$ & $\mathrm{Q}$ \\ \hline
+	\endhead
+	\hline
+	\endfoot
+	
+  \endlastfoot
+  0 & 0 & 0 & 0 & 0 \\ \hline
+  0 & 0 & 0 & 1 & 0 \\ \hline
+  0 & 0 & 1 & 0 & 0 \\ \hline
+  0 & 0 & 1 & 1 & 0 \\ \hline
+  0 & 1 & 0 & 0 & 0 \\ \hline
+  0 & 1 & 0 & 1 & 1 \\ \hline
+  0 & 1 & 1 & 0 & 1 \\ \hline
+  0 & 1 & 1 & 1 & 1 \\ \hline
+  1 & 0 & 0 & 0 & 0 \\ \hline
+  1 & 0 & 0 & 1 & 0 \\ \hline
+  1 & 0 & 1 & 0 & 0 \\ \hline
+  1 & 0 & 1 & 1 & 0 \\ \hline
+  1 & 1 & 0 & 0 & 0 \\ \hline
+  1 & 1 & 0 & 1 & 0 \\ \hline
+  1 & 1 & 1 & 0 & 0 \\ \hline
+  1 & 1 & 1 & 1 & 0 \\ \hline
+  \caption{Truth Table for Example 1}
+  \end{longtable}
+
+\subsection{Example 2}
+
+\begin{figure}[H]
+  \centering
+  \begin{circuitikz}
+    \node[and port] (and1) at (0,0) {};
+    \draw (and1.in 1) -- ++(-1,0) node[left] {$A$};
+    \draw (and1.in 2) -- ++(-1,0) node[left] {$B$};
+
+    \node[nor port] (nor1) at (5,-0.25) {};
+
+    \node[xor port] (xor) at (2.5,-2) {};
+
+    \node[nand port] (nand) at (0,-5) {};
+    \draw (nand.in 1) -- ++(-1,0) node[left] {$C$};
+    \draw (nand.in 2) -- ++(-1,0) node[left] {$D$};
+
+    \draw (nand.out) -- ++(1,0) -| (xor.in 2);
+    \draw (and1.in 2) -- ++(0,-1) -| (xor.in 1);
+    \draw (and1.out) -- ++(1,0) -- (nor1.in 1);
+
+    \node[and port] (AND) at (6,-5.25) {};
+
+    \node[or port] (or) at (9,-2) {};
+
+    \draw (nand.out)  -- ++(1,0) |- (AND.in 2);
+
+    \draw (xor.out) -- ++(0.25,0) -| (AND.in 1);
+
+    \draw (nor1.out) -- ++(0.25,0) -| (or.in 1);
+    \draw (AND.out) -- ++(0.5,0) -| (or.in 2);
+    \draw (or.out) -- ++(1,0) node[right] {$Q$};
+
+    \draw (nand1.out) -- ++(0.25,0) -| (nor1.in 2);
+
+  \end{circuitikz}
+\end{figure}
+
+\begin{longtable}{|c|c|c|c||c|}
+	\hline
+    $\mathrm{A}$  & $\mathrm{B}$ & $\mathrm{C}$ & $\mathrm{D}$ & $\mathrm{Q}$ \\
+  \hline
+	\endfirsthead
+	\hline
+   $\mathrm{A}$  & $\mathrm{B}$ & $\mathrm{C}$ & $\mathrm{D}$ & $\mathrm{Q}$ \\ \hline
+	\endhead
+	\hline
+	\endfoot
+	
+  \endlastfoot
+  0 & 0 & 0 & 0 & 1 \\ \hline
+    0 & 0 & 0 & 1 & 1 \\  \hline
+    0 & 0 & 1 & 0 & 1 \\  \hline
+    0 & 0 & 1 & 1 & 1 \\  \hline
+    0 & 1 & 0 & 0 & 1 \\  \hline
+    0 & 1 & 0 & 1 & 1 \\  \hline
+    0 & 1 & 1 & 0 & 1 \\  \hline
+    0 & 1 & 1 & 1 & 0 \\  \hline
+    1 & 0 & 0 & 0 & 1 \\  \hline
+    1 & 0 & 0 & 1 & 1 \\  \hline
+    1 & 0 & 1 & 0 & 1 \\  \hline
+    1 & 0 & 1 & 1 & 1 \\  \hline
+    1 & 1 & 0 & 0 & 1 \\  \hline
+    1 & 1 & 0 & 1 & 0 \\  \hline
+    1 & 1 & 1 & 0 & 0 \\  \hline
+    1 & 1 & 1 & 1 & 0 \\  \hline
+  \caption{Truth Table for Example 2}
+  \end{longtable}
+
+
+
+\subsection{Example 3}
+
+\begin{figure}[H]
+  \centering
+  \begin{circuitikz}
+    \node[nor port] (nor) at (0,0) {};
+    \draw (nor.in 1) -- ++(-1,0) node[left] {$A$};
+    \draw (nor.in 2) -- ++(-1,0) node[left] {$B$};
+
+    \node[nand port] (nand) at (5,-0.25) {};
+
+    \node[or port] (or) at (2.5,-2) {};
+
+    \node[and port] (and) at (0,-5) {};
+    \draw (and.in 1) -- ++(-1,0) node[left] {$C$};
+    \draw (and.in 2) -- ++(-1,0) node[left] {$D$};
+
+    \draw (and.out) -- ++(1,0) -| (or.in 2);
+    \draw (nor.in 2) -- ++(0,-1) -| (or.in 1);
+    \draw (nor.out) -- ++(1,0) -- (nand.in 1);
+
+    \node[and port] (and3) at (6,-5.25) {};
+
+    \node[xor port] (xor2) at (9,-2) {};
+
+    \draw (or1.out)  -- ++(1,0) |- (and3.in 2);
+
+    \draw (or.out) -- ++(0.25,0) -| (and3.in 1);
+
+    \draw (nand.out) -- ++(0.25,0) -| (xor2.in 1);
+    \draw (and3.out) -- ++(0.5,0) -| (xor2.in 2);
+    \draw (xor2.out) -- ++(1,0) node[right] {$Q$};
+
+    \draw (or.out) -- ++(0.25,0) -| (nand.in 2);
+
+  \end{circuitikz}
+\end{figure}
+
+\begin{longtable}{|c|c|c|c||c|}
+	\hline
+    $\mathrm{A}$  & $\mathrm{B}$ & $\mathrm{C}$ & $\mathrm{D}$ & $\mathrm{Q}$ \\
+  \hline
+	\endfirsthead
+	\hline
+   $\mathrm{A}$  & $\mathrm{B}$ & $\mathrm{C}$ & $\mathrm{D}$ & $\mathrm{Q}$ \\ \hline
+	\endhead
+	\hline
+	\endfoot
+	
+  \endlastfoot
+  0 & 0 & 0 & 0 & 1 \\ \hline
+    0 & 0 & 0 & 1 & 1 \\ \hline
+    0 & 0 & 1 & 0 & 1 \\ \hline
+    0 & 0 & 1 & 1 & 1 \\ \hline
+    0 & 1 & 0 & 0 & 1 \\ \hline
+    0 & 1 & 0 & 1 & 1 \\ \hline
+    0 & 1 & 1 & 0 & 1 \\ \hline
+    0 & 1 & 1 & 1 & 0 \\ \hline
+    1 & 0 & 0 & 0 & 1 \\ \hline
+    1 & 0 & 0 & 1 & 1 \\ \hline
+    1 & 0 & 1 & 0 & 1 \\ \hline
+    1 & 0 & 1 & 1 & 0 \\ \hline
+    1 & 1 & 0 & 0 & 1 \\ \hline
+    1 & 1 & 0 & 1 & 1 \\ \hline
+    1 & 1 & 1 & 0 & 1 \\ \hline
+    1 & 1 & 1 & 1 & 0 \\ \hline
+  \caption{Truth Table for Example 3}
+  \end{longtable}
+
+\section{Conclusion}
+In this experiment, we studied three different bollena circuits and verified the truth tables for each of the circuit. In each case , the truth tables were verified to be correct.
+
+\section{Sources of Error}
+
+
+\end{document}
