@@ -78,6 +78,9 @@ Boolean algebra delas with variables only two possible output,$0$ and $1$ (false
   \begin{minipage}[t]{0.45\textwidth}
     \begin{table}[H]
       \centering
+      %change size of the table
+      \renewcommand{\arraystretch}{1.2}
+      \setlength{\tabcolsep}{10pt}
       \begin{tabular}{|c||c|}
         \hline
         $A$ & $\overline{A}$ \\ \hline
@@ -100,12 +103,16 @@ Boolean algebra delas with variables only two possible output,$0$ and $1$ (false
     \draw (myport.in 2) -- ++(-1,0) node[left] {$B$};
     \draw (myport.out) -- ++(1,0) node[right] {$A \cdot B$};
   \end{circuitikz}
+\caption{Symbol of AND Gate}
+\label{fig:and}
 \end{figure}
 \end{minipage}%
 \begin{minipage}[t]{0.45\textwidth}
 \begin{table}[H]
   \centering
-  \begin{tabular}{|c|c|c|}
+  \setlength{\tabcolsep}{10pt}
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{|c|c||c|}
     \hline
     $A$ & $B$ & $A \cdot B$ \\ \hline
     0 & 0 & 0 \\ \hline
@@ -128,12 +135,16 @@ Boolean algebra delas with variables only two possible output,$0$ and $1$ (false
     \draw (myport.in 2) -- ++(-1,0) node[left] {$B$};
     \draw (myport.out) -- ++(1,0) node[right] {$A + B$};
   \end{circuitikz}
+\caption{Symbol of OR Gate}
+\label{fig:or}
 \end{figure}
 \end{minipage}%
 \begin{minipage}[t]{0.45\textwidth}
 \begin{table}[H]
   \centering
-  \begin{tabular}{|c|c|c|}
+  \setlength{\tabcolsep}{10pt}
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{|c|c||c|}
     \hline
     $A$ & $B$ & $A + B$ \\ \hline
     0 & 0 & 0 \\ \hline
@@ -156,12 +167,16 @@ Boolean algebra delas with variables only two possible output,$0$ and $1$ (false
     \draw (myport.in 2) -- ++(-1,0) node[left] {$B$};
     \draw (myport.out) -- ++(1,0) node[right] {$\overline{A \cdot B}$};
   \end{circuitikz}
+\caption{Symbol of NAND Gate}
+\label{fig:nand}
 \end{figure}
 \end{minipage}%
 \begin{minipage}[t]{0.45\textwidth}
 \begin{table}[H]
   \centering
-  \begin{tabular}{|c|c|c|}
+  \setlength{\tabcolsep}{10pt}
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{|c|c||c|}
   \hline
   $A$ & $B$ & $\overline{A \cdot B}$ \\ \hline
   0 & 0 & 1 \\ \hline
@@ -184,12 +199,16 @@ Boolean algebra delas with variables only two possible output,$0$ and $1$ (false
     \draw (myport.in 2) -- ++(-1,0) node[left] {$B$};
     \draw (myport.out) -- ++(1,0) node[right] {$\overline{A + B}$};
   \end{circuitikz}
+\caption{Symbol of NOR Gate}
+\label{fig:nor}
 \end{figure}
 \end{minipage}%
 \begin{minipage}[t]{0.45\textwidth}
 \begin{table}[H]
   \centering
-  \begin{tabular}{|c|c|c|}
+  \setlength{\tabcolsep}{10pt}
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{|c|c||c|}
   \hline
   $A$ & $B$ & $\overline{A + B}$ \\ \hline
   0 & 0 & 1 \\ \hline
@@ -213,14 +232,18 @@ Boolean algebra delas with variables only two possible output,$0$ and $1$ (false
     \draw (myport.in 2) -- ++(-1,0) node[left] {$B$};
     \draw (myport.out) -- ++(1,0) node[right] {$A \oplus B$};
   \end{circuitikz}
+\caption{Symbol of XOR Gate}
+\label{fig:xor}
 \end{figure}
 \end{minipage}%
 \begin{minipage}[t]{0.45\textwidth}
   \begin{table}[H]
     \centering
-    \begin{tabular}{|c|c|c|}
+    \setlength{\tabcolsep}{10pt}
+    \renewcommand{\arraystretch}{1.2}
+    \begin{tabular}{|c|c||c|}
       \hline
-      $A$ & $B$ & $\overline{A \oplus B}$ \\ \hline
+      $A$ & $B$ & $A \oplus B$ \\ \hline
       0 & 0 & 0 \\ \hline
       0 & 1 & 1 \\ \hline
       1 & 0 & 1 \\ \hline
@@ -231,12 +254,21 @@ Boolean algebra delas with variables only two possible output,$0$ and $1$ (false
   \end{table}
 \end{minipage}
 \end{itemize}
-
+In our experiment, we have used ICs for implementing the above mentioned logic gates. The ICs used are listed below:
+\begin{itemize}
+  \item \textbf{IC7400}: NAND Gate
+  \item \textbf{IC7402}: NOR Gate
+  \item \textbf{IC7404}: NOT Gate
+  \item \textbf{IC7408}: AND Gate
+  \item \textbf{IC7432}: OR Gate
+  \item \textbf{IC7486}: XOR Gate
+\end{itemize}
 
 \section{Boolean Circuit Verification}
-
+We shall verify three different boolean circuits in this experiment. The circuitds are drawn with using ICs, bread boards and the output is observed using an LED Bulb. The glowing of the LED indicates an output $1$ while $0$ is indicated by the LED not glowing. 
+\newpage
 \subsection{Example 1}
-
+The first example boolean circuit is drawn below.
 \begin{figure}[H]
   \centering
   \begin{circuitikz}
@@ -271,8 +303,20 @@ Boolean algebra delas with variables only two possible output,$0$ and $1$ (false
     \draw (nand1.out) -- ++(0.25,0) -| (nor1.in 2);
 
   \end{circuitikz}
+\caption{Boolean Circuit for Example 1}
+\label{fig:example1}
 \end{figure}
-
+\setlength{\tabcolsep}{10pt}
+\renewcommand{\arraystretch}{1.2}
+\noindent
+The theoretical boolean expression of the circuit is given by:
+\begin{equation*}
+\boxed{
+    \text{Q}=\overline{\text{A}}\text{B}.(\text{C}+\text{D})
+}
+\end{equation*}
+\noindent
+Experimentally, the truth table for the circuit drawn above has been tabulated below
 \begin{longtable}{|c|c|c|c||c|}
 	\hline
     $\mathrm{A}$  & $\mathrm{B}$ & $\mathrm{C}$ & $\mathrm{D}$ & $\mathrm{Q}$ \\
@@ -303,9 +347,10 @@ Boolean algebra delas with variables only two possible output,$0$ and $1$ (false
   1 & 1 & 1 & 1 & 0 \\ \hline
   \caption{Truth Table for Example 1}
   \end{longtable}
-
+\noindent
+In each of the cases , we observed that the experimental output of the circuit matched with what was expexted from the theoretical expression. The truth table for the circuit was hence verified to be correct.
 \subsection{Example 2}
-
+The second boolean circuit that we shall verify is given below:
 \begin{figure}[H]
   \centering
   \begin{circuitikz}
@@ -340,8 +385,20 @@ Boolean algebra delas with variables only two possible output,$0$ and $1$ (false
     \draw (nand1.out) -- ++(0.25,0) -| (nor1.in 2);
 
   \end{circuitikz}
+\caption{Boolean Circuit for Example 2}
+\label{fig:example2}
 \end{figure}
-
+\noindent
+The theoretical boolean expression of the circuit is given by:
+\begin{equation*}
+\boxed{
+    \text{Q}=\overline{\text{A}}.(\overline{\text{C}.\text{D}})+\overline{\text{B}}
+}
+\end{equation*}
+\noindent
+Experimentally, the truth table for the circuit drawn above has been tabulated below:
+\setlength{\tabcolsep}{10pt}
+\renewcommand{\arraystretch}{1.2}
 \begin{longtable}{|c|c|c|c||c|}
 	\hline
     $\mathrm{A}$  & $\mathrm{B}$ & $\mathrm{C}$ & $\mathrm{D}$ & $\mathrm{Q}$ \\
@@ -372,11 +429,11 @@ Boolean algebra delas with variables only two possible output,$0$ and $1$ (false
     1 & 1 & 1 & 1 & 0 \\  \hline
   \caption{Truth Table for Example 2}
   \end{longtable}
-
-
+\noindent
+In each of the cases , we observed that the experimental output of the circuit matched with what was expexted from the theoretical expression. The truth table for the circuit was hence verified to be correct.
 
 \subsection{Example 3}
-
+The final example that we shall verify is shown below:
 \begin{figure}[H]
   \centering
   \begin{circuitikz}
@@ -411,8 +468,18 @@ Boolean algebra delas with variables only two possible output,$0$ and $1$ (false
     \draw (or.out) -- ++(0.25,0) -| (nand.in 2);
 
   \end{circuitikz}
+\caption{Boolean Circuit for Example 3}
+\label{fig:example3}
 \end{figure}
-
+\noindent
+\begin{equation*}
+  \boxed{
+    \text{Q}=\overline{A}.\overline{B}+\overline{C}+\overline{D}
+  }
+\end{equation*}
+Exoerimentally, the truth table for the circuit drawn above has been tabulated below:
+\setlength{\tabcolsep}{10pt}
+\renewcommand{\arraystretch}{1.2}
 \begin{longtable}{|c|c|c|c||c|}
 	\hline
     $\mathrm{A}$  & $\mathrm{B}$ & $\mathrm{C}$ & $\mathrm{D}$ & $\mathrm{Q}$ \\
@@ -443,11 +510,17 @@ Boolean algebra delas with variables only two possible output,$0$ and $1$ (false
     1 & 1 & 1 & 1 & 0 \\ \hline
   \caption{Truth Table for Example 3}
   \end{longtable}
+\noindent
+In each of the cases , we observed that the experimental output of the circuit matched with what was expexted from the theoretical expression. The truth table for this circuit was hence verified to be correct as well.
 
 \section{Conclusion}
-In this experiment, we studied three different bollena circuits and verified the truth tables for each of the circuit. In each case , the truth tables were verified to be correct.
+In this experiment, we studied three different boolean circuits made from a combination of different logic gates and verified the truth tables for each of the circuit. In each case , the truth tables were verified to be correct.
 
 \section{Sources of Error}
-
+The following sources of error were observed during the experiment:
+\begin{itemize}
+  \item The connections made on the bread board may not very stable and hence could give rise to incorrect results. Errors may also occur due to disfunctioning of the ICs used.
+  \item The LED Bulb used to indicate the output maybe not be bright enough. This could cause difficulty and errors in observing the output.
+\end{itemize}
 
 \end{document}
